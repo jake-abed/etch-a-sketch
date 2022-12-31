@@ -1,4 +1,35 @@
 * {
 	font-family:'Courier New', Courier, monospace;
-	background-color: hotpink;
+	background-color: ghostwhite;
+}
+
+body {
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.etch-a-sketch-section {
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.etch-a-sketch-body {
+	width: min(360px, 95vw);
+	aspect-ratio: 1 / 1.25;
+	margin: 0 auto;
+	background-color: #C4D300;
+	border-radius: 3%;
+}
+
+.etch-a-sketch-screen {
+	width: 90%;
+	aspect-ratio: 1 / 1;
+	background-color: white;
+	margin: auto;
+	margin-top: 5%;
 }
