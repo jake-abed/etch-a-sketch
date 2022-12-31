@@ -32,4 +32,9 @@ h1 {
 	background-color: white;
 	margin: auto;
 	margin-top: 5%;
+	display: grid;
+}
+
+.pixelDiv {
+	aspect-ratio: 1 / 1;
 }
