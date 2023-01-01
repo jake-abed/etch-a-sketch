@@ -1,5 +1,7 @@
 'use strict';
-const allBlackFill = () => console.log('hi, squirrel');
+function allBlackFill() {
+	return this.setAttribute('style', 'background-color: black');
+}
 //Declare settings object, with 'mode' property and 'squaresPerSide'
 const settings = {
 	mode: allBlackFill,
@@ -16,9 +18,13 @@ const fillScreen = (sideLength) => {
 		const pixelDiv = document.createElement('div');
 		pixelDiv.setAttribute('id', `div-${i}`);
 		pixelDiv.setAttribute('class', 'pixel-div');
+		pixelDiv.addEventListener('pointerover', settings.mode);
+		pixelDiv.addEventListener('touch', settings.mode);
 		screenNode.append(pixelDiv);
 	}
 }
-
-//Assign 'hover' event listeners to each function that run a fill function, settings.mode's current assignment.
+//Assign 'hover' event listeners to each pixel that run a fill function, settings.mode's current assignment.
 //When user clicks reset function, the divs are deleted and the etch-a-sketch reinits per specs.
+
+//finally, init the etch-a-sketch toy
+fillScreen(settings.squaresPerSide);
