@@ -1,6 +1,7 @@
 * {
 	font-family:'Courier New', Courier, monospace;
 	background-color: ghostwhite;
+	touch-action: none;
 }
 
 body {
@@ -33,6 +34,20 @@ h1 {
 	margin: auto;
 	margin-top: 5%;
 	display: grid;
+}
+
+.button-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	background-color: #C4D300;
+	padding: 1vh 1vw 1vh 1vw;
+}
+
+.button {
+	background-color: black;
+	padding: 3px;
+	color: ghostwhite;
 }
 
 .pixelDiv {
